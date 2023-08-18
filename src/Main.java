@@ -1,9 +1,4 @@
-import Kata_8kyu.Kata_8kyu_001_test;
-import Kata_8kyu.Kata_8kyu_002_test;
-import Kata_8kyu.Kata_8kyu_003_test;
-import Kata_8kyu.Kata_8kyu_004_test;
-
-import static org.junit.Assert.assertEquals;
+import Kata_8kyu.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,5 +12,7 @@ public class Main {
         Kata_8kyu_003_test.testSum();
 
         Kata_8kyu_004_test.fixedTests();
+
+        Kata_8kyu_005_test.testOddAndEven();
     }
 }
