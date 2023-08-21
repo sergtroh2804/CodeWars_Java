@@ -17,5 +17,7 @@ public class Main {
         Kata_8kyu_005_test.testOddAndEven();
 
         Kata_8kyu_006_test.testEvenOrOdd();
+
+        Kata_8kyu_007_test.test1();
     }
 }
