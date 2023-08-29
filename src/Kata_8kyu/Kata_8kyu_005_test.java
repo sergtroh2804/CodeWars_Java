@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class Kata_8kyu_005_test {
     @Test
-    public static void testOddAndEven() {
+    public void testOddAndEven() {
         assertEquals(true, Kata_8kyu_005.isLove(1, 4));
     }
     @Test
