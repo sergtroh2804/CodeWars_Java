@@ -11,9 +11,10 @@ The function should return true if a triangle can be built with the sides of giv
 public class Kata_7kyu_001 {
     public static boolean isTriangle(int a, int b, int c){
         boolean result = true;
+        if (a <= 0 || b <= 0 || c <= 0) result = false;
         if (a >= b + c) result = false;
         if (b >= a + c) result = false;
-        if (c >= b + c) result = false;
+        if (c >= b + a) result = false;
         return result;
     }
 }
