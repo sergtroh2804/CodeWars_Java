@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class Kata_8kyu_007_test {
     @Test
-    public static void test1(){
+    public void test1(){
         assertEquals("stringToNumber(1234)", 1234 , Kata_8kyu_007.stringToNumber("1234"));
     }
     @Test
