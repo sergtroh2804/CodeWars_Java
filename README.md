@@ -1,4 +1,4 @@
 # CodeWars_Java
 CodeWars_Java
 
-Задарния CodeWars kata на Java
+Задания CodeWars kata на Java
