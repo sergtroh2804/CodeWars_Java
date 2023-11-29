@@ -1,3 +1,4 @@
+import Kata_6kyu.Kata_6kyu_005;
 import Kata_8kyu.*;
 
 
