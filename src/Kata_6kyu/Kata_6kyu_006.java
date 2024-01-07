@@ -49,11 +49,19 @@ relation to running multiple processes at the same time: https://en.wikipedia.or
 https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/java
  */
 
+import java.util.Arrays;
+
 public class Kata_6kyu_006 {
     public static int solveSuperMarketQueue(int[] customers, int n) {
+        int[] q_count = new int[n];
+        int result = 0;
 
+        for (int customer: customers){
+            q_count[0] += customer;
+            Arrays.sort(q_count);
+            result = q_count[n-1];
+        }
 
-
-        return 0;
+        return result;
     }
 }
