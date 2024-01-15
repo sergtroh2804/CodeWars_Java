@@ -23,5 +23,7 @@ https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/java
 public class Kata_6kyu_009 {
     public static int[] parse(String data) {
         // Implement me! :)
+        int[] a = new int[0];
+        return a;
     }
 }
