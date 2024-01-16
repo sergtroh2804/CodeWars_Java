@@ -1,5 +1,7 @@
 package Kata_6kyu;
 
+import java.util.ArrayList;
+
 /*
 Array.diff
 
@@ -19,7 +21,18 @@ https://www.codewars.com/kata/523f5d21c841566fde000009/train/java
  */
 public class Kata_6kyu_008 {
     public static int[] arrayDiff(int[] a, int[] b) {
-        // Your code here
-        return a;
+        ArrayList<Integer> listA = new ArrayList<>();
+        for(int aValue: a){
+            listA.add(aValue);
+        }
+        for(int bValue: b){
+            while(listA.remove(Integer.valueOf(bValue)));
+        }
+        int[] result = new int[listA.size()];
+        for(int i = 0; i < listA.size(); i++){
+            result[i] = listA.get(i);
+        }
+
+        return result;
     }
 }
