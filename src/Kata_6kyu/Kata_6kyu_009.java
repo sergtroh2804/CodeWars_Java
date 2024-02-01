@@ -1,7 +1,6 @@
 package Kata_6kyu;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /*
 Make the Deadfish Swim
