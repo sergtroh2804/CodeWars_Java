@@ -9,5 +9,6 @@ public class Kata_6kyu_009_test {
     public void exampleTests() {
         assertArrayEquals(new int[] {8, 64}, Kata_6kyu_009.parse("iiisdoso"));
         assertArrayEquals(new int[] {8, 64, 3600}, Kata_6kyu_009.parse("iiisdosodddddiso"));
+        assertArrayEquals(new int[] {4, 9, 11, 10, 100}, Kata_6kyu_009.parse("iisodsoiiodoso"));
     }
 }

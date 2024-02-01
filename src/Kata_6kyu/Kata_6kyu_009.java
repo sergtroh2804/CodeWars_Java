@@ -1,5 +1,8 @@
 package Kata_6kyu;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /*
 Make the Deadfish Swim
 
@@ -23,7 +26,30 @@ https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/java
 public class Kata_6kyu_009 {
     public static int[] parse(String data) {
         // Implement me! :)
-        int[] a = new int[0];
-        return a;
+        ArrayList<Integer> result = new ArrayList<>();
+        int x = 0;
+        for (char ch: data.toCharArray()){
+            switch(ch){
+                case 'i':
+                    x++;
+                    break;
+                case 'd':
+                    x--;
+                    break;
+                case 's':
+                    x = x*x;
+                    break;
+                case 'o':
+                    result.add(x);
+                    break;
+            }
+        }
+        Integer[] arr1 = new Integer[result.size()];
+        arr1 = result.toArray(arr1);
+        int[] arr2 = new int[result.size()];
+        for (int i = 0; i < result.size(); i++){
+            arr2[i] = arr1[i];
+        }
+        return arr2;
     }
 }
