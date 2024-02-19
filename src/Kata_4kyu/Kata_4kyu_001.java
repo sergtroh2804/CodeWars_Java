@@ -50,10 +50,84 @@ https://www.codewars.com/kata/51b66044bce5799a7f000003/train/java
 
 public class Kata_4kyu_001 {
     public static String toRoman(int n) {
+
         return "I";
     }
 
     public static int fromRoman(String romanNumeral) {
-        return 1;
+        int[] digits = new int[romanNumeral.length()];
+        int iterator = 0;
+        int result = 0;
+        for(char romanNum:romanNumeral.toCharArray()){
+            switch (romanNum){
+                case 'M':
+                    digits[iterator] = 1000;
+                    if (iterator > 0){
+                        if (digits[iterator - 1] < digits[iterator]) {
+                            digits[iterator - 1] *= -1;
+                        }
+                    }
+                    iterator++;
+                    break;
+                case 'D':
+                    digits[iterator] = 500;
+                    if (iterator > 0){
+                        if (digits[iterator - 1] < digits[iterator]) {
+                            digits[iterator - 1] *= -1;
+                        }
+                    }
+                    iterator++;
+                    break;
+                case 'C':
+                    digits[iterator] = 100;
+                    if (iterator > 0){
+                        if (digits[iterator - 1] < digits[iterator]) {
+                            digits[iterator - 1] *= -1;
+                        }
+                    }
+                    iterator++;
+                    break;
+                case 'L':
+                    digits[iterator] = 50;
+                    if (iterator > 0){
+                        if (digits[iterator - 1] < digits[iterator]) {
+                            digits[iterator - 1] *= -1;
+                        }
+                    }
+                    iterator++;
+                    break;
+                case 'X':
+                    digits[iterator] = 10;
+                    if (iterator > 0){
+                        if (digits[iterator - 1] < digits[iterator]) {
+                            digits[iterator - 1] *= -1;
+                        }
+                    }
+                    iterator++;
+                    break;
+                case 'V':
+                    digits[iterator] = 5;
+                    if (iterator > 0){
+                        if (digits[iterator - 1] < digits[iterator]) {
+                            digits[iterator - 1] *= -1;
+                        }
+                    }
+                    iterator++;
+                    break;
+                case 'I':
+                    digits[iterator] = 1;
+                    if (iterator > 0){
+                        if (digits[iterator - 1] < digits[iterator]) {
+                            digits[iterator - 1] *= -1;
+                        }
+                    }
+                    iterator++;
+                    break;
+            }
+        }
+        for(int i:digits){
+            result += i;
+        }
+        return result;
     }
 }
