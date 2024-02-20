@@ -10,6 +10,11 @@ public class Kata_4kyu_001_test {
     public void testToRoman() throws Exception {
         assertThat("1 converts to 'I'", Kata_4kyu_001.toRoman(1), is("I"));
         assertThat("2 converts to 'II'", Kata_4kyu_001.toRoman(2), is("II"));
+        assertThat("4 converts to 'IV'", Kata_4kyu_001.toRoman(4), is("IV"));
+        assertThat("8 converts to 'VIII'", Kata_4kyu_001.toRoman(8), is("VIII"));
+        assertThat("1666 converts to 'MDCLXVI'", Kata_4kyu_001.toRoman(1666), is("MDCLXVI"));
+        assertThat("92 converts to 'XCII'", Kata_4kyu_001.toRoman(92), is("XCII"));
+        assertThat("2540 converts to 'MMDXL'", Kata_4kyu_001.toRoman(2540), is("MMDXL"));
     }
 
     @Test
