@@ -72,6 +72,7 @@ public class MorseCodeDecoder {
      */
     public static String decodeMorse(String morseCode) {
         //TODO
+        return "";
     }
 
     /**
@@ -84,5 +85,6 @@ public class MorseCodeDecoder {
      */
     public static String decodeBitsAdvanced(String bits) {
         //TODO
+        return "";
     }
 }
