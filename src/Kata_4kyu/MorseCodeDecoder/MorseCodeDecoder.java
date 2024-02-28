@@ -1,6 +1,6 @@
-package Kata_4kyu;
+package Kata_4kyu.MorseCodeDecoder;
 
-/*
+/**
 Decode the Morse code, advanced
 
 Part of Series 2/3
@@ -51,7 +51,6 @@ NOTE: For coding purposes you have to use ASCII characters . and -, not Unicode 
 
 The Morse code table is preloaded for you (see the solution setup, to get its identifier in your language).
 
-
 Eg:
   morseCodes(".--") //to access the morse translation of ".--"
 
@@ -64,7 +63,7 @@ After you master this kata, you may try to Decode the Morse code, for real.
 
 
 https://www.codewars.com/kata/54b72c16cd7f5154e9000457/train/java
- */
+*/
 
 public class MorseCodeDecoder {
     public static String decodeBits(String bits) {

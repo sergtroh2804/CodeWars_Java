@@ -1,8 +1,7 @@
-package Kata_2kyu;
+package Kata_2kyu.MorseCodeDecoder;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import org.junit.runners.JUnit4;
 
 // TODO: Replace examples and use TDD development by writing your own tests
 

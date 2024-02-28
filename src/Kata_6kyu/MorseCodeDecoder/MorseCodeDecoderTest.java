@@ -1,4 +1,4 @@
-package Kata_6kyu;
+package Kata_6kyu.MorseCodeDecoder;
 
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.*;

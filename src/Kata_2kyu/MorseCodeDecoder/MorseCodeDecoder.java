@@ -1,4 +1,4 @@
-package Kata_2kyu;
+package Kata_2kyu.MorseCodeDecoder;
 
 /**
  * Decode the Morse code, for real

@@ -1,4 +1,4 @@
-package Kata_4kyu;
+package Kata_4kyu.MorseCodeDecoder;
 
 import org.junit.Test;
 
